@@ -1,8 +1,30 @@
 def q1(cidades):
-    return []
+    nova_lista = []
+
+    for i in cidades:
+        idade = cidades[i]
+        if idade > 100:
+            nova_lista.append(i)
+
+    return nova_lista
 
 def q2(lista1, lista2):
-    return []
+    nova_lista = []
+    soma = 0
+
+    for i in lista1:
+        if i > 0:
+            soma +=i
+            nova_lista.append(i)
+
+    for j in lista2:
+        if j >0:
+            soma +=j
+            nova_lista.append(j)
+
+    nova_lista.sort()
+
+    return soma, nova_lista
 
 def q3(valores):
     return [],[]
